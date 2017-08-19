@@ -39,3 +39,9 @@
 
 * **git commit -m "mesagem":** Realiza o commit e passa uma mensagem explicando o commit feito.
 
+# Fazendo commit sem criar um index / stage
+
+* **git commit -a:** Inclui imediatamente no commit todos os arquivos modificados ou alterados! Porém
+não adiciona os arquivos novos. Podemos combinar a opção de mensagem com **git commit -a -m "Mensagem Commit"** para não precisar
+escrever a mensagem no editor padrão do console.
+
