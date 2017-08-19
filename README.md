@@ -34,6 +34,7 @@
 # Realizando o primeiro commit no repositório
 
 > **git config --global user.name "seunome"** = Inserir usuário da máquina
+
 > **git config --globa user.email "seuemail@gmail.com"** = e-mail configurado no git no momento que geramos a SSH
 
 * **git commit -m "mesagem":** Realiza o commit e passa uma mensagem explicando o commit feito.
