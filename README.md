@@ -45,3 +45,40 @@
 não adiciona os arquivos novos. Podemos combinar a opção de mensagem com **git commit -a -m "Mensagem Commit"** para não precisar
 escrever a mensagem no editor padrão do console.
 
+* **git log:** Histórico de commit's realizados no projeto.
+
+* **git whatchanged:** Visualiza a mensagem passada no commit e também quais arquivos foram alterados.
+
+* **git whatchanged -p:** Mostra detalhadamente oque foi alterado nos arquivos em um determinado commit.
+
+# Configuração do repositório remoto
+
+* Para conseguirmos compartilhar nosso projeto HTML, precisamos indicar que o diretório do nosso projeto apontará para um repositório remoto, no caso, o que acabamos de criar no Github. Para realizarmos esse processo, o Git possui o comando **git remote add**, com o qual podemos indicar a localização do repositório remoto e o nome que queremos dar para ele (um apelido ou alias).
+
+> A sintaxe completa do comando é:
+
+>> git remote add [alias_do_repositorio] [uri_do_repositorio]
+
+>> git remote add origin https://github.com/BetoVerzemiassi/controle-de-versao-git.git
+
+# Envio dos commits locais para o repositório   
+
+* **git push origin master:** Enviando nossas alterações para o repositório remoto na branch master criada por padrão no momento
+que criamos o repositório no GitHub.
+
+> **origin:** Repositório remoto que criamos, no meu caso com nome controle-de-versao-git
+
+> **master:** Branch criada por padrão ao criar repositórios no GitHub
+
+# Contribuição com o projeto: clone de repositórios
+
+* **git clone:** Com essa comando conseguimos baixar para nossa máquina o repositorio que está no Git para realizar alterações.
+Basta apena informar a URL do repositório que quermos realizar o clone. Da seguinte forma abaixo:
+
+> git clone https://github.com/BetoVerzemiassi/controle-de-versao-git.git
+
+# Sincronização com as novas alterações do repositório
+
+* Para que a sincronização seja realizada e o desenvolvedor tenha em seu computador as novas versões dos arquivos, basta que ele execute o comando **git pull origin master**
+
+
