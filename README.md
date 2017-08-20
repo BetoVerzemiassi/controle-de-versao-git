@@ -73,7 +73,7 @@ que criamos o repositório no GitHub.
 # Contribuição com o projeto: clone de repositórios
 
 * **git clone:** Com essa comando conseguimos baixar para nossa máquina o repositorio que está no Git para realizar alterações.
-Basta apena informar a URL do repositório que quermos realizar o clone. Da seguinte forma abaixo:
+Basta apena informar a URL do repositório que queremos realizar o clone. Da seguinte forma abaixo:
 
 > git clone https://github.com/BetoVerzemiassi/controle-de-versao-git.git
 
@@ -81,4 +81,15 @@ Basta apena informar a URL do repositório que quermos realizar o clone. Da segu
 
 * Para que a sincronização seja realizada e o desenvolvedor tenha em seu computador as novas versões dos arquivos, basta que ele execute o comando **git pull origin master**
 
+* Outra alternativa é utilizar, no primeiro push, a opção **-u** ou **--set-upstream**. Ela atrela a branch remota à local, fazendo com que não seja mais necessário passar como parâmetros a origem e a branch no comando push, que fica então assim: **git push**.
 
+# Organização do trabalho com branches
+
+* **git branch design:** Cria uma nova branch com nome design, apenas cria.
+
+* **git checkout -b design:** Cria a nova branch e já nos coloca no caminho certo da nova branch.
+
+* **git branch:** Verifica em qual branch estamos atualmente, será visualizado todos as branch criada,
+a que estiver com "*" indica que essa é a branch que estamos.
+
+* **git checkout design:** Modificamos de branch com esse comando.
