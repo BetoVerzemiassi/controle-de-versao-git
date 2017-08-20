@@ -93,3 +93,14 @@ Basta apena informar a URL do repositório que queremos realizar o clone. Da seg
 a que estiver com "*" indica que essa é a branch que estamos.
 
 * **git checkout design:** Modificamos de branch com esse comando.
+
+* **git push origin design:** Envia suas atualizações para o repositório na nova branch criada.
+
+* **git pull origin master:** Atualiza nosso projeto local com os arquivos da branch master.
+
+* **git pull origin design:** Atualiza nossos arquivos locais com as atualizações feitas na branch design.
+
+* **git branch -r:** Visualiza as branches já existentes em um repositório remoto.
+
+* **git push -u origin design:** Atualiza o repositório local e remoto, faz o caminho track da branch remota para
+nossa branch local.
