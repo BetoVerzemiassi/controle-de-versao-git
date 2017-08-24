@@ -122,3 +122,41 @@ nossa branch local.
 * Colocar apenas os commits novos na branch "master", porém, para isso, existe o comando git merge que move os commits de uma determinada branch para outra branch.
 
 * Para utilizá-lo, primeiro é preciso ir para a branch para a qual se quer levar os commits, no caso, a "master" (git checkout master). Em seguida, deve-se dizer para o comando git merge de qual branch virão os commits novos, que, no caso, é a branch "desenvolvimento". Para isso, basta executar git merge desenvolvimento.
+
+# Controle avançado de alterações
+
+* **git diff:** Verifica as alterações que foram feitas, comparando os arquivos.
+
+# Descartando alterações no Working Directory: git checkout
+
+* verificar as alterações que foram feitas com o comando git diff e desfazer as alterações manualmente. Mas e se muita coisa foi alterada dentro de um arquivo? Para este problema, o Git nos possibilita descartar todas as alterações que estão no "Working Directory" de um determinado arquivo. Para isso, utilizamos o comando git checkout passando o nome do arquivo cujas alterações serão removidas. No nosso caso, temos:
+
+> **git checkout nome-do-arquivo**
+
+* **git checkout master nome-do-arquivo:** Esse comando trará o arquivo "proposta_1.html" como ele se encontra na branch "master" e o adicionará ao Index do repositório na branch "desenvolvimento", pronto para um commit.
+
+* **git reset:** Permite desfazer qualquer número de commits, bastando utilizar o hash do commit que queremos manter como
+HEAD.
+
+* **git revert d5b609...:** Desfaz uma alteraão que um determinado commit fez, bastando apenas passar o identificador do commit.
+
+* **git stash:** Vai guardar as alterações que ainda não foram commitadas, para serem commitadas mais tarde.
+
+* **git stash list:** Com esse comando, conseguimos listar o que guardamos para realizar o commit.
+
+* **git stash pop:** Retomando o ultimo item que estava listando no stash.
+
+* **git stash apply stash@{0}:** Aqui estamos sendo mais especificos ainda para retormar o stash. Retoma de onde paramos
+para realizar um ajuste. Assim sem prejudicar as alterações que estavamos realizando.
+
+* **git stash drop:** Apaga/Joga fora nosso stash da alteração temporaria que fizemos.
+
+# Procurando Commits que queremos desfazer com Bisect
+
+* **git bisect start:** Passar o commit que achamos que é o bom e logo em seguida o commit que achamos que está com falha.
+
+* **git bisect HEAD:**
+
+* **git bisect good 561f444c85638b2619c15e7eef9f6e313b45db2b:**
+
+* **git bisect bad:**
