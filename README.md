@@ -138,6 +138,10 @@ nossa branch local.
 * **git reset:** Permite desfazer qualquer número de commits, bastando utilizar o hash do commit que queremos manter como
 HEAD.
 
+* **git reset --hard:** Com este comando, as alterações são removidas do histórico local de commits e também tanto do index quanto do working directory, permanentemente.
+
+* **git reset --soft:** Com este comando, as alterações são removidas do histórico local de commits, mas não são removidas do index.
+
 * **git revert d5b609...:** Desfaz uma alteraão que um determinado commit fez, bastando apenas passar o identificador do commit.
 
 * **git stash:** Vai guardar as alterações que ainda não foram commitadas, para serem commitadas mais tarde.
@@ -150,6 +154,8 @@ HEAD.
 para realizar um ajuste. Assim sem prejudicar as alterações que estavamos realizando.
 
 * **git stash drop:** Apaga/Joga fora nosso stash da alteração temporaria que fizemos.
+
+* **git stash clear:** Exclui todos os estados.
 
 # Procurando Commits que queremos desfazer com Bisect
 
