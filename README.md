@@ -104,3 +104,9 @@ a que estiver com "*" indica que essa é a branch que estamos.
 
 * **git push -u origin design:** Atualiza o repositório local e remoto, faz o caminho track da branch remota para
 nossa branch local.
+
+# Resolução de conflitos
+
+* Muitos desenvolvedores preferem utilizar uma ferramenta gráfica para facilitar o processo de merge manual, pois as diferenças entre cada versão do arquivo são mais facilmente visíveis, muitas vezes tendo alinhamento linha a linha.
+
+* **git mergetool --tool-help:** Mostra no console uma lista de programas possíveis de ser utilizados. Dessa lista, pode-se escolher um, instalar no seu computador e utilizar através do comando **git mergetool -t nome_do_programa**
