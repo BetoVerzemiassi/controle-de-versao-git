@@ -110,3 +110,15 @@ nossa branch local.
 * Muitos desenvolvedores preferem utilizar uma ferramenta gráfica para facilitar o processo de merge manual, pois as diferenças entre cada versão do arquivo são mais facilmente visíveis, muitas vezes tendo alinhamento linha a linha.
 
 * **git mergetool --tool-help:** Mostra no console uma lista de programas possíveis de ser utilizados. Dessa lista, pode-se escolher um, instalar no seu computador e utilizar através do comando **git mergetool -t nome_do_programa**
+
+# Envio dos commits das branches locais para o master remoto
+
+* Para realizar essa tarefa, o primeiro passo, é verificar se a branch master não possui nenhuma nova atualização, ou seja, temos que fazer um checkout da master com git checkout master e, em seguida, realizarmos o git pull para buscar as novas alterações feitas por outras pessoas naquele repositório.
+
+* **git rebase:** Se simplesmente jogássemos o conteúdo da branch "desenvolvimento" para a master, poderíamos ter que tratar conflitos de vários commits ao mesmo tempo além do log dos commits ficarem confusos. Justamente para evitar essa situação, o Git possui o comando git rebase, onde podemos indicar qual é a nova base de commits que deve ser utilizada e resolver os conflitos commit por commit. No nosso caso, queremos que a branch "desenvolvimento" utilize como base de commits a "master" que acabamos de atualizar.
+
+# Como fazer um Merge
+
+* Colocar apenas os commits novos na branch "master", porém, para isso, existe o comando git merge que move os commits de uma determinada branch para outra branch.
+
+* Para utilizá-lo, primeiro é preciso ir para a branch para a qual se quer levar os commits, no caso, a "master" (git checkout master). Em seguida, deve-se dizer para o comando git merge de qual branch virão os commits novos, que, no caso, é a branch "desenvolvimento". Para isso, basta executar git merge desenvolvimento.
