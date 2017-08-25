@@ -166,3 +166,19 @@ para realizar um ajuste. Assim sem prejudicar as alterações que estavamos real
 * **git bisect good 561f444c85638b2619c15e7eef9f6e313b45db2b:**
 
 * **git bisect bad:**
+
+# Contribuição com projetos nos quais não temos permissão para fazer commit: fork e pull requests
+
+* **git log --pretty=oneline:** Mostra todos os commits por linha.
+
+* **git log --pretty=short:** Parecido com o padrão do git log, porém não mostra a data do commit. 
+
+* **git log --pretty=full:** Mostra quem criou o commit no repositório.
+
+* **git log --pretty='%an realizou o commit %h: %s':** Podemos customizar nossa mensagem de log de commits. 
+
+* **git log -p:** Conseguimos ver no log dos commits quais arquivos foram alterados.
+
+* **git log --stat:** Mostra quais arquivos foram alterados de forma mais resumida.
+
+* **git log --graph:** Mostra graficamente os caminhos que o respositorio foi seguindo.
