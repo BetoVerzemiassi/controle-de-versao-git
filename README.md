@@ -182,3 +182,19 @@ para realizar um ajuste. Assim sem prejudicar as alterações que estavamos real
 * **git log --stat:** Mostra quais arquivos foram alterados de forma mais resumida.
 
 * **git log --graph:** Mostra graficamente os caminhos que o respositorio foi seguindo.
+
+# Criação de alias complexo
+
+> [alias]
+
+> publica = !git checkout master && git pull && git checkout dev && git rebase master && git checkout master && git merge dev && git push
+
+# Agora, ao rodar o comando git publica, todo o processo abaixo será feito, em ordem, e interrompido caso o anterior falhe:
+
+* git checkout master: altera o local de trabalho para a branch master
+* git pull: atualiza o histórico da branch master
+* git checkout dev: altera o local de trabalho para a branch dev
+* git rebase master: atualiza o HEAD da branch dev para receber as alterações da branch master
+* git checkout master: altera o local de trabalho novamente para a branch master
+* git merge dev: mescla as alterações da branch dev na master
+* git push: envia suas alterações para o repositório remoto
