@@ -198,3 +198,13 @@ para realizar um ajuste. Assim sem prejudicar as alterações que estavamos real
 * git checkout master: altera o local de trabalho novamente para a branch master
 * git merge dev: mescla as alterações da branch dev na master
 * git push: envia suas alterações para o repositório remoto
+
+# Selecionando Commits
+
+* Queremos aplicar um commit que está apenas na branch master em uma outra branch, Exemplo: Queremos o commit de numero 4
+conforme fluxo.  Executamos o seguinte comando abaixo.
+
+* **git cherry-pick 4:** Com esse comando movemos o commit da master para nossa outra branch, também podemos passar o
+hash referente ao commit que queremos trazer. Conforme abaixo
+
+> **git cherry-pick 19f0bb7d8b4be8ecd687b48fca301b71b95eab41**
