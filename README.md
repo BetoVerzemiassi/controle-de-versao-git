@@ -208,3 +208,9 @@ conforme fluxo.  Executamos o seguinte comando abaixo.
 hash referente ao commit que queremos trazer. Conforme abaixo
 
 > **git cherry-pick 19f0bb7d8b4be8ecd687b48fca301b71b95eab41**
+
+# Usando Git através de interfaces visuais 
+
+* **TortoiseGit:** http://code.google.com/p/tortoisegit/
+
+* **Git-cola:**  http://git-cola.github.com/downloads.html
